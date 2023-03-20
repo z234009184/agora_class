@@ -51,19 +51,15 @@ public class AgoraClassPlugin: NSObject, FlutterPlugin, AgoraEduClassroomSDKDele
                 return;
             }
             
-            let launchConfig = AgoraEduLaunchConfig(userName: userName,          // 用户名
-                                                    userUuid: userUuid,          // 用户 ID
-                                                    userRole: AgoraEduUserRole(rawValue: userRole)!,          // 用户角色: 1 为老师，2 为学生
-                                                    roomName: roomName,          // 房间名
-                                                    roomUuid: roomUuid,          // 房间 ID
-                                                    roomType: AgoraEduRoomType(rawValue: roomType)!,          // 房间类型: 0 为 一对一，2 为大班课，4 为小班课
-                                                    appId: appId,                //声网 App ID
-                                                    token: token,                // 测试环境下，你可以使用临时 Token；生产或安全环境下，强烈建议你使用服务器生成的 Token
-                                                    startTime: nil,              // 课堂开始时间
-                                                    duration: nil,               // 课堂持续时长
-                                                    region: AgoraEduRegion.CN,              // 区域
-                                                    mediaOptions: nil,  // 媒体相关配置
-                                                    userProperties: nil)         // 用户自定义属性
+            let launchConfig = AgoraEduLaunchConfig(
+                userName: userName,
+                userUuid: userUuid,
+                userRole: AgoraEduUserRole(rawValue: userRole)!,
+                roomName: roomName,
+                roomUuid: roomUuid,
+                roomType: AgoraEduRoomType(rawValue: roomType)!,
+                appId: appId,
+                token: token)
             
             AgoraClassroomSDK.setDelegate(self)
             
