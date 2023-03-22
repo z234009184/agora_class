@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'agora_class'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A new Flutter plugin project.'
   s.description      = <<-DESC
 A new Flutter plugin project.
@@ -25,18 +25,18 @@ A new Flutter plugin project.
   s.dependency 'Masonry', '1.1.0'
   s.dependency 'SDWebImage', '5.12.0'
 
-  s.dependency 'AgoraRtcEngine_iOS/RtcBasic', '3.6.2'
+  s.dependency 'AgoraRtcEngine_iOS/RtcBasic', '3.7.2'
   s.dependency 'AgoraMediaPlayer_iOS', '1.3.0'
   s.dependency 'AgoraRtm_iOS', '1.4.8'
   s.dependency 'Agora_Chat_iOS', '1.0.6'
-  s.dependency 'Whiteboard', '2.16.39'
+  s.dependency 'Whiteboard', '2.16.51'
 
-  s.dependency 'AgoraClassroomSDK_iOS', '2.8.0'
-  s.dependency 'AgoraEduUI', '2.8.0'
-  s.dependency 'AgoraWidgets', '2.8.0'
+  s.dependency 'AgoraClassroomSDK_iOS', '2.8.20'
+  s.dependency 'AgoraEduUI', '2.8.20'
+  s.dependency 'AgoraWidgets', '2.8.20'
 
   s.dependency 'AgoraUIBaseViews', '2.8.0'
-  s.dependency 'AgoraEduCore', '2.8.0'
+  s.dependency 'AgoraEduCore', '2.8.20'
   s.dependency 'AgoraWidget', '2.8.0'
 
   s.platform = :ios, '10.0'
